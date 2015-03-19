@@ -9,6 +9,4 @@ config :athn_u_library, AthnULibrary.Endpoint,
 # Configure your database
 config :athn_u_library, AthnULibrary.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "athn_u_library_prod"
+  url: System.get_env("DATABASE_URL")
