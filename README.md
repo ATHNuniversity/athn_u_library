@@ -20,3 +20,5 @@
 4. `create user athn_u_library;`
 5. `alter role athn_u_library createdb;`
 6. `\q`
+
+[ATHNuniversity Library on Heroku](http://athn-u-library.herokuapp.com)
