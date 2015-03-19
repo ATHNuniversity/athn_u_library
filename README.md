@@ -1,6 +1,7 @@
 # AthnULibrary
 
 ## Basic Setup
+0. git clone repo
 1. `brew update`
 2. `brew install elixir`
 3. `brew upgrade npm`
