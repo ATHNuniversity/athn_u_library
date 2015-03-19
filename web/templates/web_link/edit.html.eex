@@ -1,0 +1,6 @@
+<h2>Edit web_link</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: web_link_path(@conn, :update, @web_link) %>
+
+<%= link "Back", to: web_link_path(@conn, :index) %>

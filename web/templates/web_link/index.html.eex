@@ -1,0 +1,26 @@
+<h2>Listing web_links</h2>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Title</th>
+    <th>Description</th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<%= for web_link <- @web_links do %>
+  <tr>
+    <td><%= web_link.url %></td>
+    <td><%= web_link.title %></td>
+    <td><%= web_link.description %></td>
+
+    <td><%= link "Show", to: web_link_path(@conn, :show, web_link) %></td>
+    <td><%= link "Edit", to: web_link_path(@conn, :edit, web_link) %></td>
+    <td><%= link "Delete", to: web_link_path(@conn, :delete, web_link), method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link "New web_link", to: web_link_path(@conn, :new) %>

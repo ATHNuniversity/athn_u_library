@@ -1,0 +1,22 @@
+<h2>Show web_link</h2>
+
+<ul>
+
+  <li>
+    <strong>Url:</strong>
+    <%= @web_link.url %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @web_link.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @web_link.description %>
+  </li>
+
+</ul>
+
+<%= link "Back", to: web_link_path(@conn, :index) %>
