@@ -9,8 +9,8 @@ defmodule AthnULibrary.WebLink do
     timestamps
   end
 
-  @required_fields ~w(url title description)
-  @optional_fields ~w()
+  @required_fields ~w(url title)
+  @optional_fields ~w(description)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
