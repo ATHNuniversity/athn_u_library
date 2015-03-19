@@ -15,7 +15,7 @@ defmodule AthnULibrary.Router do
   scope "/", AthnULibrary do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", WebLinkController, :index
 
     resources "/links", WebLinkController
   end
