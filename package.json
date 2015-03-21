@@ -9,5 +9,6 @@
     "javascript-brunch": ">= 1.0 < 1.8",
     "sass-brunch": "git://github.com/brunch/sass-brunch.git#master",
     "uglify-js-brunch": ">= 1.0 < 1.8"
-  }
+  },
+  "scripts": {"postinstall": "brunch build --optimize"}
 }
